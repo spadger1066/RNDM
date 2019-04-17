@@ -9,11 +9,15 @@
 /* Begin PBXBuildFile section */
 		8A60A9CAAE6336B422242F36 /* Pods_RNDM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFD68E73558FA9AEE7D2215C /* Pods_RNDM.framework */; };
 		DC8055702254F9390046B356 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC80556F2254F9390046B356 /* AppDelegate.swift */; };
-		DC8055722254F9390046B356 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8055712254F9390046B356 /* ViewController.swift */; };
+		DC8055722254F9390046B356 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8055712254F9390046B356 /* MainVC.swift */; };
 		DC8055752254F9390046B356 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC8055732254F9390046B356 /* Main.storyboard */; };
 		DC8055772254F93B0046B356 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC8055762254F93B0046B356 /* Assets.xcassets */; };
 		DC80557A2254F93B0046B356 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC8055782254F93B0046B356 /* LaunchScreen.storyboard */; };
 		DC8055822254FE590046B356 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DC8055812254FE590046B356 /* GoogleService-Info.plist */; };
+		DC80558422564D3A0046B356 /* AddThoughtVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC80558322564D3A0046B356 /* AddThoughtVC.swift */; };
+		DC80558A2267A9520046B356 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8055892267A9520046B356 /* Constants.swift */; };
+		DC8055902267B9E70046B356 /* Thought.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC80558F2267B9E70046B356 /* Thought.swift */; };
+		DC8055922267BA130046B356 /* ThoughtCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8055912267BA130046B356 /* ThoughtCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,12 +26,16 @@
 		BFD68E73558FA9AEE7D2215C /* Pods_RNDM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RNDM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC80556C2254F9390046B356 /* RNDM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RNDM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC80556F2254F9390046B356 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DC8055712254F9390046B356 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DC8055712254F9390046B356 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		DC8055742254F9390046B356 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DC8055762254F93B0046B356 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC8055792254F93B0046B356 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DC80557B2254F93B0046B356 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC8055812254FE590046B356 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DC80558322564D3A0046B356 /* AddThoughtVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddThoughtVC.swift; sourceTree = "<group>"; };
+		DC8055892267A9520046B356 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		DC80558F2267B9E70046B356 /* Thought.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Thought.swift; sourceTree = "<group>"; };
+		DC8055912267BA130046B356 /* ThoughtCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThoughtCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,8 +88,11 @@
 		DC80556E2254F9390046B356 /* RNDM */ = {
 			isa = PBXGroup;
 			children = (
+				DC8055882267A9220046B356 /* Utilities */,
+				DC80558722564D8B0046B356 /* Model */,
+				DC80558622564D750046B356 /* View */,
+				DC80558522564D550046B356 /* Controller */,
 				DC80556F2254F9390046B356 /* AppDelegate.swift */,
-				DC8055712254F9390046B356 /* ViewController.swift */,
 				DC8055732254F9390046B356 /* Main.storyboard */,
 				DC8055762254F93B0046B356 /* Assets.xcassets */,
 				DC8055782254F93B0046B356 /* LaunchScreen.storyboard */,
@@ -89,6 +100,39 @@
 				DC8055812254FE590046B356 /* GoogleService-Info.plist */,
 			);
 			path = RNDM;
+			sourceTree = "<group>";
+		};
+		DC80558522564D550046B356 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DC8055712254F9390046B356 /* MainVC.swift */,
+				DC80558322564D3A0046B356 /* AddThoughtVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DC80558622564D750046B356 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DC8055912267BA130046B356 /* ThoughtCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DC80558722564D8B0046B356 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DC80558F2267B9E70046B356 /* Thought.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DC8055882267A9220046B356 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				DC8055892267A9520046B356 /* Constants.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,8 +274,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC8055722254F9390046B356 /* ViewController.swift in Sources */,
+				DC80558422564D3A0046B356 /* AddThoughtVC.swift in Sources */,
+				DC8055722254F9390046B356 /* MainVC.swift in Sources */,
 				DC8055702254F9390046B356 /* AppDelegate.swift in Sources */,
+				DC8055922267BA130046B356 /* ThoughtCell.swift in Sources */,
+				DC8055902267B9E70046B356 /* Thought.swift in Sources */,
+				DC80558A2267A9520046B356 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
