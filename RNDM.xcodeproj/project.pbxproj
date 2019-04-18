@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		8A60A9CAAE6336B422242F36 /* Pods_RNDM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFD68E73558FA9AEE7D2215C /* Pods_RNDM.framework */; };
+		DC22E4E52268C5330097F288 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC22E4E42268C5330097F288 /* LoginVC.swift */; };
+		DC22E4E72268C9B90097F288 /* CreateUserVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC22E4E62268C9B90097F288 /* CreateUserVC.swift */; };
 		DC8055702254F9390046B356 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC80556F2254F9390046B356 /* AppDelegate.swift */; };
 		DC8055722254F9390046B356 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8055712254F9390046B356 /* MainVC.swift */; };
 		DC8055752254F9390046B356 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC8055732254F9390046B356 /* Main.storyboard */; };
@@ -24,6 +26,8 @@
 		0A46C74B05BE09665B9BB36D /* Pods-RNDM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNDM.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RNDM/Pods-RNDM.debug.xcconfig"; sourceTree = "<group>"; };
 		710A66ABDCC8FE28E23ABCFD /* Pods-RNDM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNDM.release.xcconfig"; path = "Pods/Target Support Files/Pods-RNDM/Pods-RNDM.release.xcconfig"; sourceTree = "<group>"; };
 		BFD68E73558FA9AEE7D2215C /* Pods_RNDM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RNDM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC22E4E42268C5330097F288 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		DC22E4E62268C9B90097F288 /* CreateUserVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUserVC.swift; sourceTree = "<group>"; };
 		DC80556C2254F9390046B356 /* RNDM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RNDM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC80556F2254F9390046B356 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DC8055712254F9390046B356 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
@@ -107,6 +111,8 @@
 			children = (
 				DC8055712254F9390046B356 /* MainVC.swift */,
 				DC80558322564D3A0046B356 /* AddThoughtVC.swift */,
+				DC22E4E42268C5330097F288 /* LoginVC.swift */,
+				DC22E4E62268C9B90097F288 /* CreateUserVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -276,7 +282,9 @@
 			files = (
 				DC80558422564D3A0046B356 /* AddThoughtVC.swift in Sources */,
 				DC8055722254F9390046B356 /* MainVC.swift in Sources */,
+				DC22E4E52268C5330097F288 /* LoginVC.swift in Sources */,
 				DC8055702254F9390046B356 /* AppDelegate.swift in Sources */,
+				DC22E4E72268C9B90097F288 /* CreateUserVC.swift in Sources */,
 				DC8055922267BA130046B356 /* ThoughtCell.swift in Sources */,
 				DC8055902267B9E70046B356 /* Thought.swift in Sources */,
 				DC80558A2267A9520046B356 /* Constants.swift in Sources */,
