@@ -20,6 +20,11 @@
 		DC80558A2267A9520046B356 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8055892267A9520046B356 /* Constants.swift */; };
 		DC8055902267B9E70046B356 /* Thought.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC80558F2267B9E70046B356 /* Thought.swift */; };
 		DC8055922267BA130046B356 /* ThoughtCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8055912267BA130046B356 /* ThoughtCell.swift */; };
+		DCA548C1226C8F7E003A6671 /* CommentsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA548C0226C8F7E003A6671 /* CommentsVC.swift */; };
+		DCA548C3226C981F003A6671 /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA548C2226C981F003A6671 /* CommentCell.swift */; };
+		DCA548C5226CA0E6003A6671 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA548C4226CA0E6003A6671 /* Comment.swift */; };
+		DCA548C7226CA989003A6671 /* Controller in Resources */ = {isa = PBXBuildFile; fileRef = DCA548C6226CA988003A6671 /* Controller */; };
+		DCA548C9226CCBE0003A6671 /* KeyboardBoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA548C8226CCBE0003A6671 /* KeyboardBoundView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +45,11 @@
 		DC8055892267A9520046B356 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		DC80558F2267B9E70046B356 /* Thought.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Thought.swift; sourceTree = "<group>"; };
 		DC8055912267BA130046B356 /* ThoughtCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThoughtCell.swift; sourceTree = "<group>"; };
+		DCA548C0226C8F7E003A6671 /* CommentsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsVC.swift; sourceTree = "<group>"; };
+		DCA548C2226C981F003A6671 /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
+		DCA548C4226CA0E6003A6671 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		DCA548C6226CA988003A6671 /* Controller */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Controller; sourceTree = "<group>"; };
+		DCA548C8226CCBE0003A6671 /* KeyboardBoundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KeyboardBoundView.swift; path = "RNDM iOS Assets Part 2/KeyboardBoundView.swift"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +123,8 @@
 				DC80558322564D3A0046B356 /* AddThoughtVC.swift */,
 				DC22E4E42268C5330097F288 /* LoginVC.swift */,
 				DC22E4E62268C9B90097F288 /* CreateUserVC.swift */,
+				DCA548C0226C8F7E003A6671 /* CommentsVC.swift */,
+				DCA548C6226CA988003A6671 /* Controller */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -121,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				DC8055912267BA130046B356 /* ThoughtCell.swift */,
+				DCA548C2226C981F003A6671 /* CommentCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -129,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				DC80558F2267B9E70046B356 /* Thought.swift */,
+				DCA548C4226CA0E6003A6671 /* Comment.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -137,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				DC8055892267A9520046B356 /* Constants.swift */,
+				DCA548C8226CCBE0003A6671 /* KeyboardBoundView.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -204,6 +219,7 @@
 				DC80557A2254F93B0046B356 /* LaunchScreen.storyboard in Resources */,
 				DC8055822254FE590046B356 /* GoogleService-Info.plist in Resources */,
 				DC8055772254F93B0046B356 /* Assets.xcassets in Resources */,
+				DCA548C7226CA989003A6671 /* Controller in Resources */,
 				DC8055752254F9390046B356 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -243,6 +259,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-RNDM/Pods-RNDM-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
 				"${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework",
@@ -258,6 +275,7 @@
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRPCClient.framework",
@@ -282,12 +300,16 @@
 			files = (
 				DC80558422564D3A0046B356 /* AddThoughtVC.swift in Sources */,
 				DC8055722254F9390046B356 /* MainVC.swift in Sources */,
+				DCA548C9226CCBE0003A6671 /* KeyboardBoundView.swift in Sources */,
 				DC22E4E52268C5330097F288 /* LoginVC.swift in Sources */,
 				DC8055702254F9390046B356 /* AppDelegate.swift in Sources */,
 				DC22E4E72268C9B90097F288 /* CreateUserVC.swift in Sources */,
+				DCA548C3226C981F003A6671 /* CommentCell.swift in Sources */,
 				DC8055922267BA130046B356 /* ThoughtCell.swift in Sources */,
 				DC8055902267B9E70046B356 /* Thought.swift in Sources */,
 				DC80558A2267A9520046B356 /* Constants.swift in Sources */,
+				DCA548C5226CA0E6003A6671 /* Comment.swift in Sources */,
+				DCA548C1226C8F7E003A6671 /* CommentsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
