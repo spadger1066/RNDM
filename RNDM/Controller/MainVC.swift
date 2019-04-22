@@ -16,7 +16,13 @@ enum ThoughtCategory : String {
     case popular = "popular"
 }
 
-class MainVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class MainVC: UIViewController, UITableViewDataSource, UITableViewDelegate, ThoughtDelegate {
+    
+    func thoughtOptionsTapped(thought: Thought) {
+        // This is where we create the alert to handle the deletion
+        print(thought.username)
+    }
+    
     
     // Outlet
     @IBOutlet private weak var segmentControl: UISegmentedControl!
@@ -116,7 +122,7 @@ class MainVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "thoughtCell", for: indexPath) as? ThoughtCell {
-            cell.configureCell(thought: thoughts[indexPath.row])
+            cell.configureCell(thought: thoughts[indexPath.row], delegate: self)
             return cell
         } else {
             return UITableViewCell()

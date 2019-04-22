@@ -23,8 +23,8 @@
 		DCA548C1226C8F7E003A6671 /* CommentsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA548C0226C8F7E003A6671 /* CommentsVC.swift */; };
 		DCA548C3226C981F003A6671 /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA548C2226C981F003A6671 /* CommentCell.swift */; };
 		DCA548C5226CA0E6003A6671 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA548C4226CA0E6003A6671 /* Comment.swift */; };
-		DCA548C7226CA989003A6671 /* Controller in Resources */ = {isa = PBXBuildFile; fileRef = DCA548C6226CA988003A6671 /* Controller */; };
 		DCA548C9226CCBE0003A6671 /* KeyboardBoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA548C8226CCBE0003A6671 /* KeyboardBoundView.swift */; };
+		DCA548CB226DE05B003A6671 /* UpdateCommentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA548CA226DE05B003A6671 /* UpdateCommentVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,8 +48,8 @@
 		DCA548C0226C8F7E003A6671 /* CommentsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsVC.swift; sourceTree = "<group>"; };
 		DCA548C2226C981F003A6671 /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
 		DCA548C4226CA0E6003A6671 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
-		DCA548C6226CA988003A6671 /* Controller */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Controller; sourceTree = "<group>"; };
 		DCA548C8226CCBE0003A6671 /* KeyboardBoundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KeyboardBoundView.swift; path = "RNDM iOS Assets Part 2/KeyboardBoundView.swift"; sourceTree = SOURCE_ROOT; };
+		DCA548CA226DE05B003A6671 /* UpdateCommentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateCommentVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,7 +124,7 @@
 				DC22E4E42268C5330097F288 /* LoginVC.swift */,
 				DC22E4E62268C9B90097F288 /* CreateUserVC.swift */,
 				DCA548C0226C8F7E003A6671 /* CommentsVC.swift */,
-				DCA548C6226CA988003A6671 /* Controller */,
+				DCA548CA226DE05B003A6671 /* UpdateCommentVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -219,7 +219,6 @@
 				DC80557A2254F93B0046B356 /* LaunchScreen.storyboard in Resources */,
 				DC8055822254FE590046B356 /* GoogleService-Info.plist in Resources */,
 				DC8055772254F93B0046B356 /* Assets.xcassets in Resources */,
-				DCA548C7226CA989003A6671 /* Controller in Resources */,
 				DC8055752254F9390046B356 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -302,6 +301,7 @@
 				DC8055722254F9390046B356 /* MainVC.swift in Sources */,
 				DCA548C9226CCBE0003A6671 /* KeyboardBoundView.swift in Sources */,
 				DC22E4E52268C5330097F288 /* LoginVC.swift in Sources */,
+				DCA548CB226DE05B003A6671 /* UpdateCommentVC.swift in Sources */,
 				DC8055702254F9390046B356 /* AppDelegate.swift in Sources */,
 				DC22E4E72268C9B90097F288 /* CreateUserVC.swift in Sources */,
 				DCA548C3226C981F003A6671 /* CommentCell.swift in Sources */,
